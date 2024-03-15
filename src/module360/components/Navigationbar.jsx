@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Helpmodal from "./helpmodal";
 import Sharelink from "./Sharelink";
 import Bugmodal from "./Bugmodal";
+import Try from "../../Building Module/Try";
 import { VscFeedback } from "react-icons/vsc"; // Feedback Button
 import { FiLink } from "react-icons/fi"; // Share Button
 import { GrMap } from "react-icons/gr"; // Map Button
@@ -26,6 +27,8 @@ const Navigationbar = ({ toggleAutoplay, location }) => {
   const [Bugmdl, setShowBugmodal] = useState(false);
   const handlecloseBug = () => setShowBugmodal(false);
   const navigate = useNavigate();
+  const [Bldmodal, setBldmodal] = useState(false);
+  const handlecloseBld = () => setBldmodal(false);
 
   useEffect(() => {
     const handleFullscreenChange = () => {
@@ -112,7 +115,7 @@ const Navigationbar = ({ toggleAutoplay, location }) => {
             <div className="hidden md:flex">
               <button
                 type="button"
-                onClick={null}
+                onClick={() => setBldmodal(true)}
                 className="inline-flex h-14 w-14 items-center justify-center rounded-lg text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
               >
                 <span className="sr-only">Search</span>
@@ -206,6 +209,7 @@ const Navigationbar = ({ toggleAutoplay, location }) => {
         <Helpmodal onClose={handleclose} visible={Showmodal} />
         <Sharelink onClose={handlecloseShare} visible={Sharemodal} />
         <Bugmodal onClose={handlecloseBug} visible={Bugmdl} />
+        <Try onClose={handlecloseBld} visible={Bldmodal} />
       </div>
 
       {/*FOOTER*/}
@@ -289,6 +293,7 @@ const Navigationbar = ({ toggleAutoplay, location }) => {
       <Helpmodal onClose={handleclose} visible={Showmodal} />
       <Sharelink onClose={handlecloseShare} visible={Sharemodal} />
       <Bugmodal onClose={handlecloseBug} visible={Bugmdl} />
+      <Try onClose={handlecloseBld} visible={Bldmodal} />
     </div>
   );
 };

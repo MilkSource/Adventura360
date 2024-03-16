@@ -229,7 +229,7 @@ const Navigationbar = ({ toggleAutoplay, location }) => {
           <div className="flex md:hidden">
             <button
               type="button"
-              onClick={null}
+              onClick={() => setBldmodal(true)}
               className="inline-flex h-14 w-14 items-center justify-center rounded-lg text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
             >
               <span className="sr-only">Search</span>

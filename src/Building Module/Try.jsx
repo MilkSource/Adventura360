@@ -37,7 +37,7 @@ const Try = ({ visible, onClose }) => {
             <div className="relative flex h-fit flex-col">
               <img
                 src="/assets/360_buttons/placeholder.png"
-                className="aspect-square h-32"
+                className="aspect-square  rounded-full"
                 alt="tite"
               />
               <button

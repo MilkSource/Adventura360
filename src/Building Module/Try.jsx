@@ -16,15 +16,9 @@ const Try = ({ visible, onClose }) => {
       onClick={null}
       className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25"
     >
-<<<<<<< HEAD
-      <div className="flex h-full w-full items-center justify-center rounded p-2">
-        <div className="flex h-auto w-full max-w-[800px] flex-col rounded-2xl border border-black bg-white pt-12">
-          <div className="flex h-auto flex-row items-start justify-between px-12">
-=======
       <div className="flex h-full w-full items-center justify-center p-2">
-        <div className="flex h-auto w-full sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] flex-col rounded-2xl border border-black bg-white pt-12">
+        <div className="flex h-auto w-full flex-col rounded-2xl border border-black bg-white pt-12 sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px]">
           <div className="flex h-auto flex-row items-start justify-between px-4 sm:px-8 md:px-10 lg:px-12 xl:px-16">
->>>>>>> 73a810375952f4a6c6e189b3cd9a86a6854d295f
             <button
               className="flex items-center justify-center rounded-full bg-green-700 p-2 text-white"
               onClick={handleCloseAndReset}
@@ -32,10 +26,10 @@ const Try = ({ visible, onClose }) => {
               <LuGraduationCap className="h-6 w-6 sm:h-8 sm:w-8 md:h-12 md:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20" />
             </button>
             <div className="flex flex-col gap-4 px-4">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
-              Department of Information and Technology
-            </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl w-fit items-center rounded-full bg-orange-500 px-4 py-1 font-bold">
+              <h1 className="text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+                Department of Information and Technology
+              </h1>
+              <p className="w-fit items-center rounded-full bg-orange-500 px-4 py-1 text-sm font-bold sm:text-base md:text-lg lg:text-xl">
                 CEIT
               </p>
             </div>
@@ -60,7 +54,7 @@ const Try = ({ visible, onClose }) => {
               <IoIosClose className="h-12 w-12" />
             </button>
           </div>
-          <div className="flex h-full w-full flex-col justify-between gap-6 sm:px-8 md:px-16 lg:px-32 py-6">
+          <div className="flex h-full w-full flex-col justify-between gap-6 py-6 sm:px-8 md:px-16 lg:px-32">
             <p className="text-sm sm:text-base md:text-lg lg:text-xl">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text

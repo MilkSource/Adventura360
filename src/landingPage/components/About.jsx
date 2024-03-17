@@ -26,7 +26,7 @@ const About = () => {
               accreditors, and students at the Cavite State University, is
               presented.
             </p>
-            <button className=" flex h-12 items-center justify-between gap-2 rounded bg-green-600 px-7 py-2 text-white transition-all duration-300 hover:-translate-y-4 hover:bg-lime-700">
+            <button className="flex h-12 items-center justify-between gap-2 rounded bg-green-600 px-7 py-2 text-white transition-all duration-300 hover:-translate-y-4 hover:bg-lime-700">
               Learn More
             </button>
           </div>

@@ -16,7 +16,7 @@ const Try = ({ visible, onClose }) => {
       onClick={null}
       className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25"
     >
-      <div className="flex h-full w-full items-center justify-center p-2">
+      <div className="flex h-full w-full items-center justify-center rounded p-2">
         <div className="flex h-auto w-full max-w-[800px] flex-col rounded-2xl border border-black bg-white pt-12">
           <div className="flex h-auto flex-row items-start justify-between px-12">
             <button

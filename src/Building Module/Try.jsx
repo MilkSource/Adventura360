@@ -16,20 +16,26 @@ const Try = ({ visible, onClose }) => {
       onClick={null}
       className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25"
     >
+<<<<<<< HEAD
       <div className="flex h-full w-full items-center justify-center rounded p-2">
         <div className="flex h-auto w-full max-w-[800px] flex-col rounded-2xl border border-black bg-white pt-12">
           <div className="flex h-auto flex-row items-start justify-between px-12">
+=======
+      <div className="flex h-full w-full items-center justify-center p-2">
+        <div className="flex h-auto w-full sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] flex-col rounded-2xl border border-black bg-white pt-12">
+          <div className="flex h-auto flex-row items-start justify-between px-4 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+>>>>>>> 73a810375952f4a6c6e189b3cd9a86a6854d295f
             <button
               className="flex items-center justify-center rounded-full bg-green-700 p-2 text-white"
               onClick={handleCloseAndReset}
             >
-              <LuGraduationCap className="h-12 w-12" />
+              <LuGraduationCap className="h-6 w-6 sm:h-8 sm:w-8 md:h-12 md:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20" />
             </button>
             <div className="flex flex-col gap-4 px-4">
-              <h1 className="text-2xl font-bold">
-                Department of Information and Technology
-              </h1>
-              <p className="w-fit items-center rounded-full bg-orange-500 px-4 py-1 font-bold">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
+              Department of Information and Technology
+            </h1>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl w-fit items-center rounded-full bg-orange-500 px-4 py-1 font-bold">
                 CEIT
               </p>
             </div>
@@ -54,8 +60,8 @@ const Try = ({ visible, onClose }) => {
               <IoIosClose className="h-12 w-12" />
             </button>
           </div>
-          <div className="flex h-full w-full flex-col justify-between gap-6 px-32 py-6">
-            <p>
+          <div className="flex h-full w-full flex-col justify-between gap-6 sm:px-8 md:px-16 lg:px-32 py-6">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -67,7 +73,7 @@ const Try = ({ visible, onClose }) => {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </p>
-            <div className="flex items-start gap-4">
+            <div className="flex flex-wrap items-start gap-4">
               <button
                 className="flex w-fit items-center justify-center rounded-full bg-green-500 px-4 py-1 font-bold"
                 onClick={handleCloseAndReset}

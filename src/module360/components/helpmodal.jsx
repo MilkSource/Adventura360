@@ -47,7 +47,7 @@ const HelpModal = ({ visible, onClose }) => {
     <div
       id="container"
       onClick={handleOnClose}
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-25"
     >
       {/* For small Devices */}
       <div className="flex h-full w-full items-center justify-center p-2 sm:hidden">

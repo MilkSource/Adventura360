@@ -62,9 +62,9 @@ const MapButton = ({ x, y, onClick, previous_Scene }) => {
   }, [x, y, previous_Scene.coords.x, previous_Scene.coords.y]);
 
   return (
-    <div className="flex w-fit overflow-hidden rounded-xl border border-black opacity-[0.90]">
+    <div className="flex w-fit overflow-hidden rounded-xl border border-black ">
       <button
-        className="h-[90px] w-[172px] sm:h-[152px] sm:w-[264px] md:h-[172px] md:w-[336px] lg:h-[172px] lg:w-[336px]"
+        className="h-[90px] w-[172px] opacity-[0.90] sm:h-[152px] sm:w-[264px] md:h-[172px] md:w-[336px] lg:h-[172px] lg:w-[336px]"
         id="viewer"
         onClick={onClick}
       />
